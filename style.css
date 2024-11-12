@@ -96,7 +96,8 @@ z-index: 1;
     width: 180px;
     color: white;
     font-size: 30px;
-padding-left: 72px;
+    padding-right: 42px;
+    padding-left: 51px;
 }
 
 .check {
@@ -174,7 +175,7 @@ z-index: -1;
     }
 }
 
-@media only screen and (max-width:555px) and (min-width:300px) {
+@media only screen and (max-width:555px) and (min-width:400px) {
     .again {
         font-size: 16px;
     }
@@ -204,7 +205,6 @@ z-index: -1;
     .numberInput {
         width: 160px;
         height: 60px;
-        padding-left: 64px;
         font-size: 25px;
     }
 
@@ -224,4 +224,57 @@ z-index: -1;
     .score-box {
         margin-top: 23px;
     }
+}
+
+@media only screen and (max-width:400px) and (min-width:300px) {
+.heading {
+    font-size: 30px;
+}
+.again {
+    font-size: 16px;
+}
+
+.mark {
+    font-size: 38px;
+    margin-top: 7px;
+}
+
+.line {
+    transform: translateY(-32px);
+}
+
+.between {
+    font-size: 15px;
+}
+
+.box-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+.numberInput {
+    width: 160px;
+    height: 60px;
+    font-size: 25px;
+}
+
+.check {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.start, .score, .high-score {
+    font-size: 20px;
+}
+
+.score {
+    margin-top: 30px;
+}
+
+.score-box {
+    margin-top: 23px;
+}
 }

@@ -7,6 +7,12 @@ let starthtml = document.querySelector(".start")
 let highScorehtml = document.querySelector("#highScore")
 // let userName = prompt("bhai aap ka naam kya hai")
 
+inputhtml.addEventListener('input', function() {
+    if (inputhtml.value.length > 2) {
+        inputhtml.value = inputhtml.value.slice(0, 2);
+    }
+});
+
 function check() {
 if (inputhtml.value == randomNumber) {
     starthtml.innerHTML = "Correct Answer!"
